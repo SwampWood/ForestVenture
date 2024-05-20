@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfpc04hbpm4e2"]
+
+[ext_resource type="Script" path="res://enemy_projectile.gd" id="1_0s071"]
+[ext_resource type="Texture2D" uid="uid://hosbsbebexar" path="res://Enemies/Fire Worm/Move.png" id="1_3mj61"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxmir"]
+atlas = ExtResource("1_3mj61")
+region = Rect2(0, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aklpy"]
+atlas = ExtResource("1_3mj61")
+region = Rect2(46, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbxab"]
+atlas = ExtResource("1_3mj61")
+region = Rect2(92, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbgm8"]
+atlas = ExtResource("1_3mj61")
+region = Rect2(138, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfln4"]
+atlas = ExtResource("1_3mj61")
+region = Rect2(184, 0, 46, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i2e4k"]
+atlas = ExtResource("1_3mj61")
+region = Rect2(230, 0, 46, 46)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l6fu0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxmir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aklpy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbxab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tbgm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfln4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i2e4k")
+}],
+"loop": true,
+"name": &"Move",
+"speed": 5.0
+}]
+
+[node name="EnemyProjectile" type="RigidBody2D"]
+collision_layer = 16
+collision_mask = 3
+gravity_scale = 0.0
+max_contacts_reported = 1
+contact_monitor = true
+script = ExtResource("1_0s071")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.239584, 0)
+scale = Vector2(0.979167, 1)
+polygon = PackedVector2Array(-7, 0, 0, -4, 6, -4, 7.39362, 0, 5, 6, 0, 6)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l6fu0")
+animation = &"Move"
+autoplay = "Move"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

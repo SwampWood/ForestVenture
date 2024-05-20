@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://dy85qe0u8mhw4"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_nlhsa"]
+[ext_resource type="FontFile" uid="uid://by1n3fh51q75y" path="res://EpilepsySans.ttf" id="2_88pr6"]
+[ext_resource type="PackedScene" path="res://bg.tscn" id="3_2c7cy"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_nlhsa")
+
+[node name="Button_play" type="Button" parent="."]
+offset_left = 340.0
+offset_top = 136.0
+offset_right = 778.0
+offset_bottom = 186.0
+theme_override_fonts/font = ExtResource("2_88pr6")
+theme_override_font_sizes/font_size = 50
+text = "Play"
+
+[node name="Button_quit" type="Button" parent="."]
+offset_left = 346.0
+offset_top = 217.0
+offset_right = 784.0
+offset_bottom = 276.0
+theme_override_fonts/font = ExtResource("2_88pr6")
+theme_override_font_sizes/font_size = 50
+text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("3_2c7cy")]
+
+[connection signal="pressed" from="Button_play" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="Button_quit" to="." method="_on_button_quit_pressed"]
