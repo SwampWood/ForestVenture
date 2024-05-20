@@ -9,6 +9,7 @@ var attacking = false
 var can_fire = true
 var fire_rate = 2
 var speed = 100
+var health = 200
 
 var attack = preload("res://enemy_projectile.tscn")
 
