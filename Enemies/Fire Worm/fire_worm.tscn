@@ -369,10 +369,8 @@ shape = SubResource("RectangleShape2D_60vr8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_rocus")
-animation = &"Attack"
+animation = &"Walk"
 autoplay = "Idle"
-frame = 11
-frame_progress = 0.00836484
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 4

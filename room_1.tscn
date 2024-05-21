@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bk5nnsuh3jv1i"]
+[gd_scene load_steps=19 format=3 uid="uid://bk5nnsuh3jv1i"]
 
 [ext_resource type="Texture2D" uid="uid://5efakl6i4ier" path="res://Background_forest/Layer_0011_0.png" id="1_yd0h0"]
 [ext_resource type="Texture2D" uid="uid://4gshpqqxcuk2" path="res://Background_forest/Layer_0010_1.png" id="2_uvgec"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://uiqfauwaa7rr" path="res://Tiles/tileset.png" id="14_71o1v"]
 [ext_resource type="PackedScene" uid="uid://882m5y1ikp11" path="res://druid_male.tscn" id="15_bvgmx"]
 [ext_resource type="PackedScene" uid="uid://cebdktctmqwqa" path="res://Enemies/Fire Worm/fire_worm.tscn" id="15_fuwbx"]
+[ext_resource type="PackedScene" uid="uid://dwh4pgxtfxsvt" path="res://gambler_female.tscn" id="16_rrpji"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g4rlh"]
 texture = ExtResource("14_71o1v")
@@ -543,13 +544,16 @@ position = Vector2(663, 574)
 [node name="Allies" type="Node2D" parent="."]
 
 [node name="Druid_male" parent="Allies" instance=ExtResource("15_bvgmx")]
-position = Vector2(30, 590)
+position = Vector2(1384, 429)
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Allies/Druid_male"]
+[node name="Gambler_female" parent="Allies" instance=ExtResource("16_rrpji")]
+position = Vector2(44, 539)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Allies/Gambler_female"]
 remote_path = NodePath("../../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(30, 590)
+position = Vector2(44, 539)
 zoom = Vector2(1.675, 1.675)
 process_callback = 0
 limit_left = 0

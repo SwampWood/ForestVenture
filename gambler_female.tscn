@@ -1,12 +1,37 @@
-[gd_scene load_steps=20 format=3 uid="uid://dwh4pgxtfxsvt"]
+[gd_scene load_steps=27 format=3 uid="uid://dwh4pgxtfxsvt"]
 
 [ext_resource type="Script" path="res://Gambler_female.gd" id="1_k8bhn"]
 [ext_resource type="Texture2D" uid="uid://dopwxh2dorg70" path="res://Characters/Gambler/GamblerFIdle.png" id="2_6xfdl"]
+[ext_resource type="Texture2D" uid="uid://bks7ntw7i12kv" path="res://Characters/Gambler/GamblerFSkill.png" id="2_jrpry"]
 [ext_resource type="Texture2D" uid="uid://c73sntup8m3qq" path="res://Characters/Gambler/GamblerFRun.png" id="3_iuxqt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_00ax4"]
 radius = 27.0
 height = 74.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fovhn"]
+atlas = ExtResource("2_jrpry")
+region = Rect2(0, 0, 150, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyx80"]
+atlas = ExtResource("2_jrpry")
+region = Rect2(150, 0, 150, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_un31d"]
+atlas = ExtResource("2_jrpry")
+region = Rect2(300, 0, 150, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ibw7"]
+atlas = ExtResource("2_jrpry")
+region = Rect2(450, 0, 150, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrvlc"]
+atlas = ExtResource("2_jrpry")
+region = Rect2(600, 0, 150, 155)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixlha"]
+atlas = ExtResource("2_jrpry")
+region = Rect2(750, 0, 150, 155)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o1fga"]
 atlas = ExtResource("2_6xfdl")
@@ -68,6 +93,29 @@ region = Rect2(1120, 0, 160, 155)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_fovhn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyx80")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_un31d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ibw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrvlc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixlha")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_o1fga")
 }, {
 "duration": 1.0,
@@ -87,7 +135,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 5.0
+"speed": 4.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -115,23 +163,21 @@ animations = [{
 "texture": SubResource("AtlasTexture_bv2lg")
 }],
 "loop": true,
-"name": &"new_animation",
-"speed": 6.0
+"name": &"Run",
+"speed": 8.0
 }]
 
 [node name="Gambler_female" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 21
 script = ExtResource("1_k8bhn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -37)
 shape = SubResource("CapsuleShape2D_00ax4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(7.62939e-06, -42)
+position = Vector2(0, -5)
 scale = Vector2(0.537963, 0.537963)
 sprite_frames = SubResource("SpriteFrames_f54l1")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.377499
+frame_progress = 0.180931

@@ -1,15 +1,15 @@
 extends RigidBody2D
 
-var projectile_speed = 400
-var lifetime = 4
+const PROJECTILE_SPEED = 400
+const LIFETIME = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	apply_impulse(Vector2(projectile_speed, 0).rotated(rotation))
+	apply_impulse(Vector2(PROJECTILE_SPEED, 0).rotated(rotation))
 	SelfDestruct()
 
 func SelfDestruct():
-	await get_tree().create_timer(lifetime).timeout
+	await get_tree().create_timer(LIFETIME).timeout
 	queue_free()
 
 func _on_body_entered(body):
