@@ -1,7 +1,7 @@
 extends RigidBody2D
 
-const PROJECTILE_SPEED = 400
-const LIFETIME = 2
+const PROJECTILE_SPEED = 350
+const LIFETIME = 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

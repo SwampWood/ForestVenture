@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-const PROJECTILE_SPEED = 400
+const PROJECTILE_SPEED = 500
 const LIFETIME = 2
 
 # Called when the node enters the scene tree for the first time.

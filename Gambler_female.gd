@@ -6,30 +6,32 @@ const JUMP_VELOCITY = -400.0
 var attacking = false
 var can_fire_green = true
 var can_fire_red = 2
-var spell_rate = 1
+var spell_rate = 5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var anim = get_node("AnimatedSprite2D")
 
-var spell = preload("res://enemy_projectile.tscn")
+var spell = preload("res://spell.tscn")
+var spell2 = preload("res://spell2.tscn")
 
 func _process(delta):
 	SkillLoop()
 
 func SkillLoop():
-	if Input.is_action_pressed("skill") and not attacking:
+	if Input.is_action_pressed("skill") and not attacking and can_fire_green:
 		attacking = true
 		anim.play("Spell")
 	if attacking:
 		if $AnimatedSprite2D.frame == 3 and can_fire_green:
 			can_fire_green = false
-			var projectile_instance1 = spell.instantiate()
+			var projectile_instance1 = spell2.instantiate()
 			projectile_instance1.position = self.global_position
 			projectile_instance1.rotation = get_angle_to(get_global_mouse_position())
 			get_parent().add_child(projectile_instance1)
-		if $AnimatedSprite2D.frame == 5:
+		if $AnimatedSprite2D.frame == 5 and can_fire_red:
+			can_fire_red = false
 			var projectile_instance2 = spell.instantiate()
 			projectile_instance2.position = self.global_position
 			projectile_instance2.rotation = get_angle_to(get_global_mouse_position() + Vector2(22, 8))
@@ -41,6 +43,7 @@ func SkillLoop():
 			attacking = false
 			await get_tree().create_timer(spell_rate).timeout
 			can_fire_green = true
+			can_fire_red = true
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
