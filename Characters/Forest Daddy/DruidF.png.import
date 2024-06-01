@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qj8x1prr2faf"
-path="res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"
+uid="uid://btooe5h75jhft"
+path="res://.godot/imported/DruidF.png-b04a9b650f6bd1b70d1942d07fbdbd6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Pladin/pixel_character_full_body_sprites_76099458.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"]
+source_file="res://Characters/Forest Daddy/DruidF.png"
+dest_files=["res://.godot/imported/DruidF.png-b04a9b650f6bd1b70d1942d07fbdbd6d.ctex"]
 
 [params]
 

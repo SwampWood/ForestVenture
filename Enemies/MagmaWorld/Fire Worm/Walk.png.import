@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2v4c25330ylf"
-path="res://.godot/imported/pixel_character_full_body_sprites_f4bbb9ca.png-5622cce8e7b0e39d71d09278ae4c243e.ctex"
+uid="uid://bodpo84s8ts8x"
+path="res://.godot/imported/Walk.png-116a30b1d01a26cec710da8e6e6ca870.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Tamer/pixel_character_full_body_sprites_f4bbb9ca.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_f4bbb9ca.png-5622cce8e7b0e39d71d09278ae4c243e.ctex"]
+source_file="res://Enemies/Fire Worm/Walk.png"
+dest_files=["res://.godot/imported/Walk.png-116a30b1d01a26cec710da8e6e6ca870.ctex"]
 
 [params]
 

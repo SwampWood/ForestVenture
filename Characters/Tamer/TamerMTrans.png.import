@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qj8x1prr2faf"
-path="res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"
+uid="uid://dw6qccvcp12lx"
+path="res://.godot/imported/TamerMTrans.png-95ea9512eb2923f12f85ec4c3a629488.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Pladin/pixel_character_full_body_sprites_76099458.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"]
+source_file="res://Characters/Tamer/TamerMTrans.png"
+dest_files=["res://.godot/imported/TamerMTrans.png-95ea9512eb2923f12f85ec4c3a629488.ctex"]
 
 [params]
 

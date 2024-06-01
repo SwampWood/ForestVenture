@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qj8x1prr2faf"
-path="res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"
+uid="uid://hosbsbebexar"
+path="res://.godot/imported/Move.png-edbc7b0c67e4d20c353ec773a85b75b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Pladin/pixel_character_full_body_sprites_76099458.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"]
+source_file="res://Enemies/Fire Worm/Move.png"
+dest_files=["res://.godot/imported/Move.png-edbc7b0c67e4d20c353ec773a85b75b3.ctex"]
 
 [params]
 

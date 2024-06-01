@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddrrl87eb5r3w"
-path="res://.godot/imported/pixel_character_full_body_sprites_a81a3277.png-facb88fcb31fac0ad7238525f924f39f.ctex"
+uid="uid://dpghv5w5e3bpg"
+path="res://.godot/imported/ArchmageM2.png-fef80aa20c07c126327280d50c0f2300.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Rogue/pixel_character_full_body_sprites_a81a3277.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_a81a3277.png-facb88fcb31fac0ad7238525f924f39f.ctex"]
+source_file="res://Characters/ArchMage/ArchmageM2.png"
+dest_files=["res://.godot/imported/ArchmageM2.png-fef80aa20c07c126327280d50c0f2300.ctex"]
 
 [params]
 

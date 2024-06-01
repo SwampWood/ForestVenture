@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3ixkbydjd2dc"
-path="res://.godot/imported/pixel_character_full_body_sprites_d581f4bf.png-89c27ecda0db619a45e0c3a3ff0b33fb.ctex"
+uid="uid://2aivj4yaokil"
+path="res://.godot/imported/PriestF.png-38da4067a829f9a5410ad12669492895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Rogue/pixel_character_full_body_sprites_d581f4bf.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_d581f4bf.png-89c27ecda0db619a45e0c3a3ff0b33fb.ctex"]
+source_file="res://Characters/Priest/PriestF.png"
+dest_files=["res://.godot/imported/PriestF.png-38da4067a829f9a5410ad12669492895.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qj8x1prr2faf"
-path="res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"
+uid="uid://c5pvlg7efamaj"
+path="res://.godot/imported/Idle.png-7b0fc69032078dbf4a71ab9a5b3f6aba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Pladin/pixel_character_full_body_sprites_76099458.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"]
+source_file="res://Enemies/Fire Worm/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-7b0fc69032078dbf4a71ab9a5b3f6aba.ctex"]
 
 [params]
 

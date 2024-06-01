@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qj8x1prr2faf"
-path="res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"
+uid="uid://bgslqskdgr0c1"
+path="res://.godot/imported/PriestM.png-25a30cd762a58ff40d6d9bd3fc7b8a11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Characters/Pladin/pixel_character_full_body_sprites_76099458.png"
-dest_files=["res://.godot/imported/pixel_character_full_body_sprites_76099458.png-0c1d2c546cbde14f96a83bed864d241e.ctex"]
+source_file="res://Characters/Priest/PriestM.png"
+dest_files=["res://.godot/imported/PriestM.png-25a30cd762a58ff40d6d9bd3fc7b8a11.ctex"]
 
 [params]
 
