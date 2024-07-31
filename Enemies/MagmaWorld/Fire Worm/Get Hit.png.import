@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgm5dlc142ei5"
-path="res://.godot/imported/Get Hit.png-cf49447690223bda6c475f39c156d1d7.ctex"
+path="res://.godot/imported/Get Hit.png-d5ee5e000ed2ea7839ae1bf11ccceac3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/Fire Worm/Get Hit.png"
-dest_files=["res://.godot/imported/Get Hit.png-cf49447690223bda6c475f39c156d1d7.ctex"]
+source_file="res://Enemies/MagmaWorld/Fire Worm/Get Hit.png"
+dest_files=["res://.godot/imported/Get Hit.png-d5ee5e000ed2ea7839ae1bf11ccceac3.ctex"]
 
 [params]
 

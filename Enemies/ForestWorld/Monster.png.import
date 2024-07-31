@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfqugccagq4yh"
-path="res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"
+uid="uid://doddk5jddsiii"
+path="res://.godot/imported/Monster.png-5afdc72fd455adb067a614b9b40c20be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/MagmaWorld/Fire Worm/Explosion.png"
-dest_files=["res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"]
+source_file="res://Enemies/ForestWorld/Monster.png"
+dest_files=["res://.godot/imported/Monster.png-5afdc72fd455adb067a614b9b40c20be.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfqugccagq4yh"
-path="res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"
+uid="uid://cxe7gbm6sduwa"
+path="res://.godot/imported/BarbarianF.png-5d4b105c3b5ead08361aebe2f2d94036.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/MagmaWorld/Fire Worm/Explosion.png"
-dest_files=["res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"]
+source_file="res://Characters/Barbarian/BarbarianF.png"
+dest_files=["res://.godot/imported/BarbarianF.png-5d4b105c3b5ead08361aebe2f2d94036.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfqugccagq4yh"
-path="res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"
+uid="uid://x4f0ivj4ia7t"
+path="res://.godot/imported/MonkF.png-bcf5ca97bf4acddfa320f42184bb9971.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/MagmaWorld/Fire Worm/Explosion.png"
-dest_files=["res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"]
+source_file="res://Characters/Monk/MonkF.png"
+dest_files=["res://.godot/imported/MonkF.png-bcf5ca97bf4acddfa320f42184bb9971.ctex"]
 
 [params]
 

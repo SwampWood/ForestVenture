@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfqugccagq4yh"
-path="res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"
+uid="uid://c0kvdc2m3cbxo"
+path="res://.godot/imported/PaladinM_flip.png-832bac98835e160e7a29750eb4f97724.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/MagmaWorld/Fire Worm/Explosion.png"
-dest_files=["res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"]
+source_file="res://Characters/Pladin/PaladinM_flip.png"
+dest_files=["res://.godot/imported/PaladinM_flip.png-832bac98835e160e7a29750eb4f97724.ctex"]
 
 [params]
 

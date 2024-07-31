@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfqugccagq4yh"
-path="res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"
+uid="uid://c6tnefmcrfpch"
+path="res://.godot/imported/AlchemistF.png-2e9369ad2adb373578610a2ff8501d0c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/MagmaWorld/Fire Worm/Explosion.png"
-dest_files=["res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"]
+source_file="res://Characters/Alchemist/AlchemistF.png"
+dest_files=["res://.godot/imported/AlchemistF.png-2e9369ad2adb373578610a2ff8501d0c.ctex"]
 
 [params]
 

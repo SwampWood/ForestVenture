@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvmjpe5s7xvyi"
-path="res://.godot/imported/Attack.png-4df55708e050a8051f6a5dd65a927248.ctex"
+path="res://.godot/imported/Attack.png-7b6f60a3e7b6e4c56eec3c19090c6930.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/Fire Worm/Attack.png"
-dest_files=["res://.godot/imported/Attack.png-4df55708e050a8051f6a5dd65a927248.ctex"]
+source_file="res://Enemies/MagmaWorld/Fire Worm/Attack.png"
+dest_files=["res://.godot/imported/Attack.png-7b6f60a3e7b6e4c56eec3c19090c6930.ctex"]
 
 [params]
 

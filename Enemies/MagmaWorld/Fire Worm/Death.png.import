@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2mhyjh3ra0hl"
-path="res://.godot/imported/Death.png-a944786bc13f5578c568fe3886aaabc3.ctex"
+path="res://.godot/imported/Death.png-fa3bc62c719aee62260c71669c160a28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/Fire Worm/Death.png"
-dest_files=["res://.godot/imported/Death.png-a944786bc13f5578c568fe3886aaabc3.ctex"]
+source_file="res://Enemies/MagmaWorld/Fire Worm/Death.png"
+dest_files=["res://.godot/imported/Death.png-fa3bc62c719aee62260c71669c160a28.ctex"]
 
 [params]
 

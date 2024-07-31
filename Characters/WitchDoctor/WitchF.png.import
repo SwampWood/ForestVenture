@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfqugccagq4yh"
-path="res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"
+uid="uid://djmbni18tiufl"
+path="res://.godot/imported/WitchF.png-4180bcb09af10495db4ed482a99da0f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/MagmaWorld/Fire Worm/Explosion.png"
-dest_files=["res://.godot/imported/Explosion.png-841e21f705cd7db8e61cf0d6608b0cf3.ctex"]
+source_file="res://Characters/WitchDoctor/WitchF.png"
+dest_files=["res://.godot/imported/WitchF.png-4180bcb09af10495db4ed482a99da0f8.ctex"]
 
 [params]
 
