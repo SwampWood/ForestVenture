@@ -28,9 +28,9 @@ func _physics_process(delta):
 			anim.play("Attack")
 		else:
 			anim.play("Idle")
-	if direction.x < 0:
+	if direction.x < 0 and chase:
 		anim.flip_h = true
-	else:
+	elif direction.x >= 0:
 		anim.flip_h = false
 	move_and_slide()
 
@@ -40,7 +40,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	Fireloop()
 
 func Fireloop():
@@ -77,6 +77,6 @@ func _on_area_2d_body_entered(body):
 		chase = true
 
 
-func _on_area_2d_body_shape_exited(body_rid, body, body_shape_index, local_shape_index):
+func _on_area_2d_body_shape_exited(_body_rid, body, _body_shape_index, _local_shape_index):
 	if body.name == "Druid_male":
 		chase = false

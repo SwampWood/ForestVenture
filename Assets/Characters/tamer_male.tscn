@@ -1,135 +1,78 @@
-[gd_scene load_steps=20 format=3 uid="uid://882m5y1ikp11"]
+[gd_scene load_steps=6 format=3 uid="uid://bturusdxwj23w"]
 
-[ext_resource type="Texture2D" uid="uid://30qdkrcbwg1i" path="res://Characters/Forest Daddy/DruidMIdle.png" id="1_cdq0l"]
-[ext_resource type="Script" path="res://druid_male.gd" id="1_fdtci"]
-[ext_resource type="Texture2D" uid="uid://xkeeq3j4wpfq" path="res://Characters/Forest Daddy/DruidMRun.png" id="3_q2dko"]
+[ext_resource type="Texture2D" uid="uid://beugwq0j26dwo" path="res://Resources/Textures/Characters/Tamer/TamerMClean.png" id="2_yp125"]
+[ext_resource type="Texture2D" uid="uid://deaajq63wig0h" path="res://Resources/Textures/Characters/Forest Daddy/DruidMClean.png" id="3_pdtqm"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_00ax4"]
-radius = 27.0
-height = 84.0
+[sub_resource type="GDScript" id="GDScript_tprrt"]
+script/source = "extends CharacterBody2D
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_arvwy"]
-atlas = ExtResource("1_cdq0l")
-region = Rect2(0, 0, 108, 162)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4osu8"]
-atlas = ExtResource("1_cdq0l")
-region = Rect2(108, 0, 108, 162)
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_kf5q3"]
-atlas = ExtResource("1_cdq0l")
-region = Rect2(216, 0, 108, 162)
+# Get the gravity from the project settings to be synced with RigidBody nodes.
+var gravity = ProjectSettings.get_setting(\"physics/2d/default_gravity\")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_wnimq"]
-atlas = ExtResource("1_cdq0l")
-region = Rect2(324, 0, 108, 162)
+@onready var anim = get_node(\"AnimatedSprite2D\")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ycp4k"]
-atlas = ExtResource("1_cdq0l")
-region = Rect2(432, 0, 108, 162)
+func _physics_process(delta):
+	# Add the gravity.
+	if not is_on_floor():
+		velocity.y += gravity * delta
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ep2pq"]
-atlas = ExtResource("1_cdq0l")
-region = Rect2(540, 0, 108, 162)
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mi68d"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(0, 0, 228, 152)
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+		if direction == -1:
+			anim.flip_h = true
+		elif direction == 1:
+			anim.flip_h = false
+		anim.play(\"Run\")
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		anim.play(\"Idle\")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u5kr1"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(228, 0, 228, 152)
+	move_and_slide()
+"
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_04wms"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(456, 0, 228, 152)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7d52s"]
+radius = 23.0
+height = 78.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_x1pl7"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(684, 0, 228, 152)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bqjob"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(912, 0, 228, 152)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8flvf"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(1140, 0, 228, 152)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_frph2"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(1368, 0, 228, 152)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5y5mr"]
-atlas = ExtResource("3_q2dko")
-region = Rect2(1596, 0, 228, 152)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_umiai"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_0j6vv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_arvwy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4osu8")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kf5q3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wnimq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ycp4k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ep2pq")
+"texture": ExtResource("2_yp125")
 }],
 "loop": true,
 "name": &"Idle",
-"speed": 4.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mi68d")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_u5kr1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_04wms")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x1pl7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bqjob")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_8flvf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_frph2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5y5mr")
+"texture": ExtResource("3_pdtqm")
 }],
 "loop": true,
 "name": &"Run",
-"speed": 8.0
+"speed": 5.0
 }]
 
-[node name="Druid_male" type="CharacterBody2D"]
-collision_layer = 2
-script = ExtResource("1_fdtci")
+[node name="Tamer_male" type="CharacterBody2D"]
+script = SubResource("GDScript_tprrt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_00ax4")
+shape = SubResource("CapsuleShape2D_7d52s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -6)
-scale = Vector2(0.592593, 0.592593)
-sprite_frames = SubResource("SpriteFrames_umiai")
-animation = &"Run"
+position = Vector2(0, -3)
+scale = Vector2(0.635417, 0.635417)
+sprite_frames = SubResource("SpriteFrames_0j6vv")
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.0307686

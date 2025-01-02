@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://dw0r6l8yvyo01"]
 
-[ext_resource type="Script" path="res://spell2.gd" id="1_0n0cw"]
-[ext_resource type="Texture2D" uid="uid://dbhra6iqrmn83" path="res://Characters/Gambler/DiceG.png" id="2_4te8r"]
+[ext_resource type="Script" path="res://Assets/Characters/spell2.gd" id="1_fqowl"]
+[ext_resource type="Texture2D" uid="uid://dbhra6iqrmn83" path="res://Resources/Textures/Characters/Gambler/DiceG.png" id="2_4te8r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j1wvk"]
 atlas = ExtResource("2_4te8r")
@@ -129,7 +129,7 @@ collision_mask = 5
 gravity_scale = 0.0
 contact_monitor = true
 max_contacts_reported = 1
-script = ExtResource("1_0n0cw")
+script = ExtResource("1_fqowl")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(0.986841, 0.999999)

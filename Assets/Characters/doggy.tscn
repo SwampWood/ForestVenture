@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://6k5p6t6fdbpv"]
+
+[ext_resource type="Script" path="res://Assets/Characters/doggy.gd" id="1_ooxsa"]
+[ext_resource type="Texture2D" uid="uid://brssk3x0ekpt2" path="res://Resources/Textures/Characters/Tamer/CompanionClean.png" id="1_vfhmg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ke0rj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vfhmg")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jud6t"]
+size = Vector2(63, 50)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8bgya"]
+radius = 159.003
+
+[node name="Doggy" type="CharacterBody2D"]
+script = ExtResource("1_ooxsa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.13687e-13, -13)
+scale = Vector2(0.625, 0.625)
+sprite_frames = SubResource("SpriteFrames_ke0rj")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -8)
+shape = SubResource("RectangleShape2D_jud6t")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="DetectionRadius" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_8bgya")

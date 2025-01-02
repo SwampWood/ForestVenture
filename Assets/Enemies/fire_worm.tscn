@@ -1,11 +1,11 @@
 [gd_scene load_steps=56 format=3 uid="uid://cebdktctmqwqa"]
 
-[ext_resource type="Script" path="res://FireWorm.gd" id="1_buwh1"]
-[ext_resource type="Texture2D" uid="uid://cvmjpe5s7xvyi" path="res://Enemies/Fire Worm/Attack.png" id="2_4eb20"]
-[ext_resource type="Texture2D" uid="uid://2mhyjh3ra0hl" path="res://Enemies/Fire Worm/Death.png" id="3_m5hir"]
-[ext_resource type="Texture2D" uid="uid://dgm5dlc142ei5" path="res://Enemies/Fire Worm/Get Hit.png" id="4_j2h76"]
-[ext_resource type="Texture2D" uid="uid://c5pvlg7efamaj" path="res://Enemies/Fire Worm/Idle.png" id="5_45r28"]
-[ext_resource type="Texture2D" uid="uid://bodpo84s8ts8x" path="res://Enemies/Fire Worm/Walk.png" id="6_2hubl"]
+[ext_resource type="Script" path="res://Assets/Enemies/fire_worm.gd" id="1_xe7im"]
+[ext_resource type="Texture2D" uid="uid://cvmjpe5s7xvyi" path="res://Resources/Textures/Enemies/MagmaWorld/Fire Worm/Attack.png" id="2_4eb20"]
+[ext_resource type="Texture2D" uid="uid://2mhyjh3ra0hl" path="res://Resources/Textures/Enemies/MagmaWorld/Fire Worm/Death.png" id="3_m5hir"]
+[ext_resource type="Texture2D" uid="uid://dgm5dlc142ei5" path="res://Resources/Textures/Enemies/MagmaWorld/Fire Worm/Get Hit.png" id="4_j2h76"]
+[ext_resource type="Texture2D" uid="uid://c5pvlg7efamaj" path="res://Resources/Textures/Enemies/MagmaWorld/Fire Worm/Idle.png" id="5_45r28"]
+[ext_resource type="Texture2D" uid="uid://bodpo84s8ts8x" path="res://Resources/Textures/Enemies/MagmaWorld/Fire Worm/Walk.png" id="6_2hubl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_60vr8"]
 size = Vector2(52, 30)
@@ -357,11 +357,11 @@ animations = [{
 radius = 500.1
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_t4jym"]
-radius = 247.13
+radius = 170.047
 
 [node name="FireWorm" type="CharacterBody2D"]
 collision_layer = 4
-script = ExtResource("1_buwh1")
+script = ExtResource("1_xe7im")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-2, -2)

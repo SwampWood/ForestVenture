@@ -1,26 +1,26 @@
 [gd_scene load_steps=4 format=3 uid="uid://dy85qe0u8mhw4"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_nlhsa"]
-[ext_resource type="FontFile" uid="uid://by1n3fh51q75y" path="res://EpilepsySans.ttf" id="2_88pr6"]
-[ext_resource type="PackedScene" uid="uid://beslbj04271gl" path="res://bg.tscn" id="3_2c7cy"]
+[ext_resource type="Script" path="res://Assets/UIs/menu.gd" id="1_sjtb8"]
+[ext_resource type="FontFile" uid="uid://by1n3fh51q75y" path="res://Resources/Fonts/EpilepsySans.ttf" id="2_88pr6"]
+[ext_resource type="PackedScene" uid="uid://beslbj04271gl" path="res://Assets/UIs/bg.tscn" id="3_2c7cy"]
 
 [node name="Menu" type="Node2D"]
-script = ExtResource("1_nlhsa")
+script = ExtResource("1_sjtb8")
 
 [node name="Button_play" type="Button" parent="."]
-offset_left = 340.0
-offset_top = 136.0
-offset_right = 778.0
-offset_bottom = 186.0
+offset_left = 366.0
+offset_top = 220.0
+offset_right = 786.0
+offset_bottom = 280.0
 theme_override_fonts/font = ExtResource("2_88pr6")
 theme_override_font_sizes/font_size = 50
 text = "Play"
 
 [node name="Button_quit" type="Button" parent="."]
-offset_left = 346.0
-offset_top = 217.0
-offset_right = 784.0
-offset_bottom = 276.0
+offset_left = 366.0
+offset_top = 300.0
+offset_right = 786.0
+offset_bottom = 360.0
 theme_override_fonts/font = ExtResource("2_88pr6")
 theme_override_font_sizes/font_size = 50
 text = "Quit"

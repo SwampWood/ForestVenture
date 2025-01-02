@@ -1,13 +1,13 @@
 [gd_scene load_steps=27 format=3 uid="uid://dwh4pgxtfxsvt"]
 
-[ext_resource type="Script" path="res://Gambler_female.gd" id="1_k8bhn"]
-[ext_resource type="Texture2D" uid="uid://dopwxh2dorg70" path="res://Characters/Gambler/GamblerFIdle.png" id="2_6xfdl"]
-[ext_resource type="Texture2D" uid="uid://bks7ntw7i12kv" path="res://Characters/Gambler/GamblerFSkill.png" id="2_jrpry"]
-[ext_resource type="Texture2D" uid="uid://c73sntup8m3qq" path="res://Characters/Gambler/GamblerFRun.png" id="3_iuxqt"]
+[ext_resource type="Script" path="res://Assets/Characters/gambler_female.gd" id="1_5p0uu"]
+[ext_resource type="Texture2D" uid="uid://dopwxh2dorg70" path="res://Resources/Textures/Characters/Gambler/GamblerFIdle.png" id="2_6xfdl"]
+[ext_resource type="Texture2D" uid="uid://bks7ntw7i12kv" path="res://Resources/Textures/Characters/Gambler/GamblerFSkill.png" id="2_jrpry"]
+[ext_resource type="Texture2D" uid="uid://c73sntup8m3qq" path="res://Resources/Textures/Characters/Gambler/GamblerFRun.png" id="3_iuxqt"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_00ax4"]
-radius = 27.0
-height = 74.0
+radius = 22.0
+height = 70.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fovhn"]
 atlas = ExtResource("2_jrpry")
@@ -169,15 +169,14 @@ animations = [{
 
 [node name="Gambler_female" type="CharacterBody2D"]
 collision_layer = 2
-script = ExtResource("1_k8bhn")
+script = ExtResource("1_5p0uu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_00ax4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -5)
-scale = Vector2(0.537963, 0.537963)
+scale = Vector2(0.518982, 0.518981)
 sprite_frames = SubResource("SpriteFrames_f54l1")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.180931

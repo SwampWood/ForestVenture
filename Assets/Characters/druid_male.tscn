@@ -1,8 +1,8 @@
 [gd_scene load_steps=20 format=3 uid="uid://882m5y1ikp11"]
 
-[ext_resource type="Texture2D" uid="uid://30qdkrcbwg1i" path="res://Characters/Forest Daddy/DruidMIdle.png" id="1_cdq0l"]
-[ext_resource type="Script" path="res://druid_male.gd" id="1_fdtci"]
-[ext_resource type="Texture2D" uid="uid://xkeeq3j4wpfq" path="res://Characters/Forest Daddy/DruidMRun.png" id="3_q2dko"]
+[ext_resource type="Script" path="res://Assets/Characters/druid_male.gd" id="1_53wu7"]
+[ext_resource type="Texture2D" uid="uid://30qdkrcbwg1i" path="res://Resources/Textures/Characters/Forest Daddy/DruidMIdle.png" id="1_cdq0l"]
+[ext_resource type="Texture2D" uid="uid://xkeeq3j4wpfq" path="res://Resources/Textures/Characters/Forest Daddy/DruidMRun.png" id="3_q2dko"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_00ax4"]
 radius = 27.0
@@ -121,7 +121,7 @@ animations = [{
 
 [node name="Druid_male" type="CharacterBody2D"]
 collision_layer = 2
-script = ExtResource("1_fdtci")
+script = ExtResource("1_53wu7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_00ax4")
@@ -130,6 +130,5 @@ shape = SubResource("CapsuleShape2D_00ax4")
 position = Vector2(0, -6)
 scale = Vector2(0.592593, 0.592593)
 sprite_frames = SubResource("SpriteFrames_umiai")
-animation = &"Run"
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.0307686

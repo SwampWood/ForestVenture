@@ -12,5 +12,5 @@ func SelfDestruct():
 	await get_tree().create_timer(LIFETIME).timeout
 	queue_free()
 
-func _on_body_entered(body):
+func _on_body_entered(_body):
 	self.hide()

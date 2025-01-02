@@ -13,10 +13,10 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var anim = get_node("AnimatedSprite2D")
 
-var spell = preload("res://spell.tscn")
-var spell2 = preload("res://spell2.tscn")
+var spell = preload("res://Assets/Characters/spell.tscn")
+var spell2 = preload("res://Assets/Characters/spell2.tscn")
 
-func _process(delta):
+func _process(_delta):
 	SkillLoop()
 
 func SkillLoop():
@@ -44,6 +44,7 @@ func SkillLoop():
 			await get_tree().create_timer(spell_rate).timeout
 			can_fire_green = true
 			can_fire_red = true
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():

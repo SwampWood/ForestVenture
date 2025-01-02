@@ -1,21 +1,21 @@
 [gd_scene load_steps=14 format=3 uid="uid://beslbj04271gl"]
 
-[ext_resource type="Texture2D" uid="uid://5efakl6i4ier" path="res://Background_forest/Layer_0011_0.png" id="1_o0647"]
-[ext_resource type="Script" path="res://bg.gd" id="1_okl32"]
-[ext_resource type="Texture2D" uid="uid://4gshpqqxcuk2" path="res://Background_forest/Layer_0010_1.png" id="2_juabj"]
-[ext_resource type="Texture2D" uid="uid://cq60sidgbrnyo" path="res://Background_forest/Layer_0009_2.png" id="3_rkcom"]
-[ext_resource type="Texture2D" uid="uid://bf6yogn3dr1g4" path="res://Background_forest/Layer_0008_3.png" id="4_tabxs"]
-[ext_resource type="Texture2D" uid="uid://bm0ghn7nh0las" path="res://Background_forest/Layer_0007_Lights.png" id="5_g7t5t"]
-[ext_resource type="Texture2D" uid="uid://hjrxd8xkaxci" path="res://Background_forest/Layer_0006_4.png" id="6_u7tuc"]
-[ext_resource type="Texture2D" uid="uid://201wb8yirrf2" path="res://Background_forest/Layer_0005_5.png" id="7_erhgj"]
-[ext_resource type="Texture2D" uid="uid://cqg5y1kqkfoyh" path="res://Background_forest/Layer_0004_Lights.png" id="8_kp3ks"]
-[ext_resource type="Texture2D" uid="uid://deogatpa1ks8" path="res://Background_forest/Layer_0002_7.png" id="9_wtg5j"]
-[ext_resource type="Texture2D" uid="uid://d1f16ugv68sfs" path="res://Background_forest/Layer_0003_6.png" id="10_pgb4b"]
-[ext_resource type="Texture2D" uid="uid://ffbahqrpwskr" path="res://Background_forest/Layer_0001_8.png" id="11_1eywi"]
-[ext_resource type="Texture2D" uid="uid://tvoyq0ugxlv3" path="res://Background_forest/Layer_0000_9.png" id="12_qq3gt"]
+[ext_resource type="Texture2D" uid="uid://5efakl6i4ier" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0011_0.png" id="1_o0647"]
+[ext_resource type="Script" path="res://Assets/UIs/bg.gd" id="1_ryrfq"]
+[ext_resource type="Texture2D" uid="uid://4gshpqqxcuk2" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0010_1.png" id="2_juabj"]
+[ext_resource type="Texture2D" uid="uid://cq60sidgbrnyo" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0009_2.png" id="3_rkcom"]
+[ext_resource type="Texture2D" uid="uid://bf6yogn3dr1g4" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0008_3.png" id="4_tabxs"]
+[ext_resource type="Texture2D" uid="uid://bm0ghn7nh0las" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0007_Lights.png" id="5_g7t5t"]
+[ext_resource type="Texture2D" uid="uid://hjrxd8xkaxci" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0006_4.png" id="6_u7tuc"]
+[ext_resource type="Texture2D" uid="uid://201wb8yirrf2" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0005_5.png" id="7_erhgj"]
+[ext_resource type="Texture2D" uid="uid://cqg5y1kqkfoyh" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0004_Lights.png" id="8_kp3ks"]
+[ext_resource type="Texture2D" uid="uid://deogatpa1ks8" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0002_7.png" id="9_wtg5j"]
+[ext_resource type="Texture2D" uid="uid://d1f16ugv68sfs" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0003_6.png" id="10_pgb4b"]
+[ext_resource type="Texture2D" uid="uid://ffbahqrpwskr" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0001_8.png" id="11_1eywi"]
+[ext_resource type="Texture2D" uid="uid://tvoyq0ugxlv3" path="res://Resources/Textures/Backgrounds/Background_forest/Layer_0000_9.png" id="12_qq3gt"]
 
 [node name="BG" type="ParallaxBackground"]
-script = ExtResource("1_okl32")
+script = ExtResource("1_ryrfq")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(0.2, 1)
