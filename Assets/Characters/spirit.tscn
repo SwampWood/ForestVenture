@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cesggh4guwvnc"]
+
+[ext_resource type="Script" path="res://Assets/Characters/spirit.gd" id="1_0bln6"]
+[ext_resource type="Texture2D" uid="uid://c1l5oxa6rooij" path="res://Resources/Textures/Characters/Sprit/Spirit.png" id="1_e4tck"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8vkhv"]
+radius = 14.0
+height = 40.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_65d88"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_e4tck")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Spirit" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_0bln6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_8vkhv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+scale = Vector2(0.367188, 0.367188)
+sprite_frames = SubResource("SpriteFrames_65d88")
+animation = &"Idle"
+autoplay = "Idle"
