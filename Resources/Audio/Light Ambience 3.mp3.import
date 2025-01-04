@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhxfni0ye21lo"
+path="res://.godot/imported/Light Ambience 3.mp3-cac959075d9af1d0ab935bb079e2645d.mp3str"
+
+[deps]
+
+source_file="res://Resources/Audio/Light Ambience 3.mp3"
+dest_files=["res://.godot/imported/Light Ambience 3.mp3-cac959075d9af1d0ab935bb079e2645d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
